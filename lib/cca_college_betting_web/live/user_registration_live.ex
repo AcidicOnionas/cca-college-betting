@@ -33,12 +33,12 @@ defmodule CcaCollegeBettingWeb.UserRegistrationLive do
         </.error>
 
         <.input field={@form[:email]} type="email" label="Personal Email" required />
-        <.input field={@form[:school_email]} type="email" label="School Email" required />
+        <.input field={@form[:school_email]} type="email" label="Email" required />
         <div class="p-8 rounded-lg md:-mx-24 bg-zinc-100">
-          <h2 class="mb-2 text-xl font-bold font-display">Verify your school email</h2>
+          <h2 class="mb-2 text-xl font-bold font-display">Verify your email</h2>
           <p>
-            Send an email <strong>with your school email</strong>
-            to the following email address to verify your email
+            Send an email <strong>from the email address above</strong>
+            to the following address to verify you own it
           </p>
           <div class="flex p-2 font-mono bg-white border rounded-md border-zinc-200">
             <div id="verification-email" class="flex-1 overflow-x-scroll"><%= @verification_id %>@ccacollegebetting.com</div>

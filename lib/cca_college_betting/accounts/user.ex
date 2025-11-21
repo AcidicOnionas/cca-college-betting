@@ -147,7 +147,7 @@ defmodule CcaCollegeBetting.Accounts.User do
     changeset
     |> validate_required([:school_email])
     |> validate_inclusion(:school_email, Whitelist.emails(),
-      message: "must be valid senior email"
+      message: "is not on the invited list"
     )
     |> maybe_validate_unique_school_email(opts)
     |> set_id()
