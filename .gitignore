@@ -35,4 +35,3 @@ cca_college_betting-*.tar
 npm-debug.log
 /assets/node_modules/
 
-/priv/repo/users.json
